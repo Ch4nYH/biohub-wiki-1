@@ -6,20 +6,26 @@ Our project is tested locally thousands of time. At the frontend, every changes 
 ### BioSearch
 We will prove our search function work by the following steps:
 
- + **Step 1**. Find parts with suffix "0012":
+ + **Step 1**. Find bricks with suffix "0012":
     Input the pattern: ![](images/validation/search-with-suffix.png)
     Get the results:
      ![](images/validation/results-1.png)
      ![](images/validation/results-2.png)
     From the screenshot you can see that, all the parts ranked by their factor 'weight'. (results are partly displayed)
-    
- + **Step 2**. Find parts with keyword "back":
+
+ + **Step 2**. Find bricks with keyword **back**:
     Input the pattern: ![](images/validation/search-back.png)
     Get the results:
     ![](images/validation/back-results.png)
     All the parts contain pattern "back" have been pick out. (results are partly displayed)
     
+ + **Step 3**. Find bricks with type **terminator** and keyword **bact**:
+    Input the pattern and get the results:
+    ![](images/validation/terminator.png)
 
+ + **Step 4**. Find bricks with type **terminator** or **dna** and keyword **bact**:
+    ![](images/validation/dnat.png)
+    There are 19 bricks found matching the patterns. (We only show several items of the results)
 
 ### Plugins
 
