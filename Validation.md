@@ -4,27 +4,9 @@
 Our project is tested locally thousands of time. At the frontend, every changes we make will trigger `eslint` to check programming style and to find stupid mistakes. Before commiting a change, `nightwatch` and `karma` perform tests to see if everything runs well. Automated tests are also deployed at the backend. After pushing commits to our repository on github, travis CI will be activitated to build the project and run all the automated test scripts. All these features reduce the possibility of mistakes.
 
 ### BioSearch
-Type anything you want to learn about a part and press Enter, in less than one second you will get the results:
-
-![](images/description/biosearch-result.png)
-    
-The bricks are ordered by their qualities and creation date, which means you are always able to get the best and latest one to meet your need. The quality of bricks are ranked by several factors, including frequency of use, sample status, and assessments from users in forum, and so on. Each brick is displayed with a progress bar at the right bottom corner, which represents the relative ranking.
-
-BioSearch supports multi-dimensional filtering. You can use `t:<type>` to limit the type of bricks:
-
-![](images/description/biosearch-type-limit.png)
-
-or use `n:<part name>` to precisely locate a brick using its name:
-
-![](images/description/biosearch-limit-name.png)
-
-or add an `h:` filter to mark out the matched words:
-
-![](images/description/biosearch-hl.png)
-
-Multiple filters can also be combined to make complex query:
-
-![](images/description/biosearch-combine.png)
+We will prove our search function work by the following steps.
++ Find parts with suffix "0012":
+    Input the pattern: ![](images/validation/search-with-suffix.png)
 
 ### Plugins
 
