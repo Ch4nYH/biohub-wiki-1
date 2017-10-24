@@ -1015,15 +1015,25 @@ body .markdown-body
   }
 }
 </style><title>Validation</title></head><body><article class="markdown-body"><h2 id="validation"><a name="user-content-validation" href="#validation" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Validation</h2>
+<h3 id="unit-test"><a name="user-content-unit-test" href="#unit-test" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Unit Test</h3>
+<p>Our project is tested locally thousands of time. At the frontend, every changes we make will trigger <code>eslint</code> to check programming style and to find stupid mistakes. Before commiting a change, <code>nightwatch</code> and <code>karma</code> perform tests to see if everything runs well. Automated tests are also deployed at the backend. After pushing commits to our repository on github, travis CI will be activitated to build the project and run all the automated test scripts. All these features reduce the possibility of mistakes.</p>
 <h3 id="biosearch"><a name="user-content-biosearch" href="#biosearch" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>BioSearch</h3>
-<p>Type anything you want to learn about a part and press Enter, in less than one second you will get the results:</p>
-<p><img alt="" src="/Users/hfercc/iGEM/biohub-wiki/images/description/biosearch-result.png" /></p>
-<p>The bricks are ordered by their qualities and creation date, which means you are always able to get the best and latest one to meet your need. The quality of bricks are ranked by several factors, including frequency of use, sample status, and assessments from users in forum, and so on. Each brick is displayed with a progress bar at the right bottom corner, which represents the relative ranking.</p>
-<p>BioSearch supports multi-dimensional filtering. You can use <code>t:&lt;type&gt;</code> to limit the type of bricks:</p>
-<p><img alt="" src="/Users/hfercc/iGEM/biohub-wiki/images/description/biosearch-type-limit.png" /></p>
-<p>or use <code>n:&lt;part name&gt;</code> to precisely locate a brick using its name:</p>
-<p><img alt="" src="/Users/hfercc/iGEM/biohub-wiki/images/description/biosearch-limit-name.png" /></p>
-<p>or add an <code>h:</code> filter to mark out the matched words:</p>
-<p><img alt="" src="/Users/hfercc/iGEM/biohub-wiki/images/description/biosearch-hl.png" /></p>
-<p>Multiple filters can also be combined to make complex query:</p>
-<p><img alt="" src="/Users/hfercc/iGEM/biohub-wiki/images/description/biosearch-combine.png" /></p></article></body></html>
+<p>We will prove our search function work by the following steps:</p>
+<ul>
+<li><strong>Step 1</strong>. Find parts with suffix &ldquo;0012&rdquo;:<br />
+    Input the pattern: <img alt="" src="/Users/hfercc/iGEM/biohub-wiki-1/images/validation/search-with-suffix.png" /><br />
+    Get the results:<br />
+<img alt="" src="/Users/hfercc/iGEM/biohub-wiki-1/images/validation/results-1.png" /><br />
+<img alt="" src="/Users/hfercc/iGEM/biohub-wiki-1/images/validation/results-2.png" /><br />
+    From the screenshot you can see that, all the parts ranked by their factor &lsquo;weight&rsquo;. (results are partly displayed)</li>
+<li><strong>Step 2</strong>. Find parts with keyword &ldquo;back&rdquo;:<br />
+    Input the pattern: <img alt="" src="/Users/hfercc/iGEM/biohub-wiki-1/images/validation/search-back.png" /><br />
+    Get the results:<br />
+<img alt="" src="/Users/hfercc/iGEM/biohub-wiki-1/images/validation/back-results.png" /><br />
+    All the parts contain pattern &ldquo;back&rdquo; have been pick out. (results are partly displayed)</li>
+</ul>
+<h3 id="plugins"><a name="user-content-plugins" href="#plugins" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Plugins</h3>
+<h4 id="abacus"><a name="user-content-abacus" href="#abacus" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>ABACUS:</h4>
+<p>ABACUS is a submodule of team USTC-Software-2016&rsquo;s project. ABACUS is firstly developed by professor Liu Haiyan, to enlarge the functions of Biopano. The de novo design of amino acid sequence to fold into desired structures is a way to reach a more thorough understanding of how amino acid sequences encode protein structures and to supply methods for protein engineering. To overcome limitations in current computational models, they developed a comprehensive statistical energy function for protein design with a new general strategy and verify that it can complement and rival current well-established models. They established an experimental approach which can be used to efficiently assess or improve the foldability of designed proteins. To prove it, they report four de novo proteins for different targets, all experimentally verified to the well-folded, solved solution structures for two being excellent agreement with respective design targets.[1]</p>
+<h4 id="biobless"><a name="user-content-biobless" href="#biobless" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>bioBLESS:</h4>
+<p>bioBLESS is an adaption of team USTC-Software-2015&rsquo;s project. It is an integrated system based on Espresso, designed to construct and evaluate biological circuit. The project is available on GitHub, which means one can download all the source code and test it. Members of team USTC-Software-2015 use TravisCI for continuous integration and coverall for coverage test at the backend, while Chai, Mocha and phantomJs assure the website is displayed as expected.</p></article></body></html>

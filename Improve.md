@@ -2,7 +2,7 @@
 Biohub2.0 is the upgraded version of Biohub, which is the project of team USTC-Software-2016. A lot of functions have been updated and many new features added both at frontend and backend. 
 
 ### Frontend
-+**User Interface**: We introduced a new user interface. The beautiful new interface is based on the Bootstrap framework, however, which is highly customized. We disabled the built-in module `Glyphicons` and replace it by `font-awesome`. We coordinated our color schemes and our logo to make a nicer look. Short animations during transitions were added.
+ +**User Interface**: We introduced a new user interface. The beautiful new interface is based on the Bootstrap framework, however, which is highly customized. We disabled the built-in module `Glyphicons` and replace it by `font-awesome`. We coordinated our color schemes and our logo to make a nicer look. Short animations during transitions were added.
 
 ### Backend
 

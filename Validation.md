@@ -4,19 +4,20 @@
 Our project is tested locally thousands of time. At the frontend, every changes we make will trigger `eslint` to check programming style and to find stupid mistakes. Before commiting a change, `nightwatch` and `karma` perform tests to see if everything runs well. Automated tests are also deployed at the backend. After pushing commits to our repository on github, travis CI will be activitated to build the project and run all the automated test scripts. All these features reduce the possibility of mistakes.
 
 ### BioSearch
-We will prove our search function work by the following steps.
-+ Find parts with suffix "0012":
+We will prove our search function work by the following steps:
+
+ + **Step 1**. Find parts with suffix "0012":
     Input the pattern: ![](images/validation/search-with-suffix.png)
     Get the results:
      ![](images/validation/results-1.png)
      ![](images/validation/results-2.png)
     From the screenshot you can see that, all the parts ranked by their factor 'weight'. (results are partly displayed)
-+ Find parts with keyword "back":
+    
+ + **Step 2**. Find parts with keyword "back":
     Input the pattern: ![](images/validation/search-back.png)
     Get the results:
     ![](images/validation/back-results.png)
     All the parts contain pattern "back" have been pick out. (results are partly displayed)
-    
     
 
 
