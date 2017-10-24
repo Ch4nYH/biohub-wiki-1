@@ -7,6 +7,18 @@ Our project is tested locally thousands of time. At the frontend, every changes 
 We will prove our search function work by the following steps.
 + Find parts with suffix "0012":
     Input the pattern: ![](images/validation/search-with-suffix.png)
+    Get the results:
+     ![](images/validation/results-1.png)
+     ![](images/validation/results-2.png)
+    From the screenshot you can see that, all the parts ranked by their factor 'weight'. (results are partly displayed)
++ Find parts with keyword "back":
+    Input the pattern: ![](images/validation/search-back.png)
+    Get the results:
+    ![](images/validation/back-results.png)
+    All the parts contain pattern "back" have been pick out. (results are partly displayed)
+    
+    
+
 
 ### Plugins
 
