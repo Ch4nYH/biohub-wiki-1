@@ -71,6 +71,8 @@ And here is a screenshot of iGEM's official website.
 ![](images/validation/header.png)
 ![](images/validation/footer.png)
 You can see that all the data, including bricks type, author, part status etc., are identical. 
+Documentation and experiences are also fetched. We dont attach screenshots here. You can check by visiting [Our Results](http://biohub.technology/forum/brick/BBa_J23100/) and [Official Pages](http://parts.igem.org/Part:BBa_J23100)
+
 
 
 
