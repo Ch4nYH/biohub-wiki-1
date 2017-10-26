@@ -40,7 +40,7 @@ To improve the user experience, we build Biohub 2.0 as a single page application
 
 ### About UI
 
-We choose Bootstrap 3 as our basic framework. Bootstrap is a UI framework developed by Twitter team, with multiple elegant components and the ability to prototype quickly. Based on it, we added many customized styles and components to provides better experience.
+We choose Bootstrap 3 as our basic framework. Bootstrap is a UI framework developed by Twitter team, with multiple elegant components and the ability to prototype quickly. Based on it, we added many customized styles and components to provide better experience.
 
 To visualize the data, we use serveral data representing frameworks. For example, d3.js for DNA sequance displaying in Forum and ngl.js for protein structure illustration. Such frameworks transform certain data into graphics, and make it easier for users to learn the content.
 
