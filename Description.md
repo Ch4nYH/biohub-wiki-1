@@ -19,7 +19,9 @@ The parts data can be used for various purposes, but apparently we are not able 
 The server of Biohub 2.0 is written in Python 3.6 and we choose Django as our basic framework. We added many features to the framework to enable our plugin system, like hot reloading and websocket routing. The underlying implementation of Django had been carefully patched to meet our need for changeable core components.
 
 ### Frontend Part
-Biohub 2.0 is a single page application using Bootstrap and Vue.js as its frameworks. We do not design our user interface with the existing components in Bootstrap but the customed one. Several libraries, like ngl.js and d3.js, were used to visualize the data. 
+Biohub 2.0 is a single page application using Bootstrap and Vue.js as its frameworks. We do not design our user interface with the existing components in Bootstrap but the customed one. Several libraries, like ngl.js and d3.js, were used to visualize the data.
+
+To see detailed information about implementation, please visit [Implementation](http://2017.igem.org/Team:USTC-Software/Implementation)
 <!-- to do -->
 
 ## To Be Improved
