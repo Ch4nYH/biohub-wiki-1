@@ -18,9 +18,9 @@ The initial data will be imported into a separate database (by default it is nam
 
 ### About Bricks Ranking
 
-Before ranking, we have to filter the initial data, since there exists many apparently useless bricks on iGEM. Such process will occur before deploying. We simply drop those bricks without DNA sequence, and dumped the filtered data into a new table (by default it is named `igem.parts_filtered`). At the same time we will pre-process some fields, such as extracting subparts information from edit cache, and pre-calculating some components of the ranking weight. You may refer to [updateparts.py](https://github.com/hsfzxjy/Biohub-Server/blob/master/biohub/biobrick/bin/updateparts.py) to see this process.
+Before ranking, we have to filter the initial data, since there exists many apparently useless bricks on iGEM. Such process will occur before deploying. We simply drop those bricks without DNA sequence, and dumped the filtered data into a new table (by default it is named `igem.parts_filtered`). At the same time we will pre-process some fields, such as extracting subparts information from edit cache, and pre-calculating some components of the ranking weight. You may refer to [updateparts.py](https://github.com/igemsoftware2017/USTC-Software-2017/blob/master/biohub/biobrick/bin/updateparts.py) to see this process.
 
-Then we will rank the bricks for the first time, using multiple statistical methods. You may refer to [refreshweight.py](https://github.com/hsfzxjy/Biohub-Server/blob/master/biohub/biobrick/management/commands/refreshweight.py) to see such process. At this stage, the bricks are completely ranked by initial data, without any factors from Forum.
+Then we will rank the bricks for the first time, using multiple statistical methods. You may refer to [refreshweight.py](https://github.com/igemsoftware2017/USTC-Software-2017/blob/master/biohub/biobrick/management/commands/refreshweight.py) to see such process. At this stage, the bricks are completely ranked by initial data, without any factors from Forum.
 
 After the server starts up, we will recalculate the ranking weights every 30 minutes. The reason for not evaluating them in real time is that the task may update the whole table and become time-consuming. From now on, Biohub will gradually correct the deviation in bricks ranking.
 
